@@ -230,13 +230,14 @@ ErrorHandler:
 End Sub
 
 Private Function BrowseForFolder(Optional Title As String = "Select Folder") As String
-    ' You'll need to implement folder browser functionality
-    ' This can be done using API calls or Shell.Application
-    ' For simplicity, using CommonDialog for file selection
-    cdFolder.DialogTitle = Title
-    cdFolder.ShowOpen
-    If cdFolder.FileName <> "" Then
-        BrowseForFolder = Left(cdFolder.FileName, InStrRev(cdFolder.FileName, "\") - 1)
+    Dim shellApp As Object
+    Dim selectedFolder As Object
+    
+    Set shellApp = CreateObject("Shell.Application")
+    Set selectedFolder = shellApp.BrowseForFolder(0, Title, 0)
+    
+    If Not selectedFolder Is Nothing Then
+        BrowseForFolder = selectedFolder.Self.Path
     Else
         BrowseForFolder = ""
     End If
