@@ -35,17 +35,19 @@ Begin VB.Form frmMain
       Width           =   2415
    End
    Begin VB.CommandButton cmdNext 
-      Caption         =   "¡·"
       Height          =   375
       Left            =   1080
+      Picture         =   "frmMain.frx":10CA
+      Style           =   1  'Graphical
       TabIndex        =   2
       Top             =   2280
       Width           =   375
    End
    Begin VB.CommandButton cmdPrev 
-      Caption         =   "¡¶"
       Height          =   375
       Left            =   600
+      Picture         =   "frmMain.frx":129B
+      Style           =   1  'Graphical
       TabIndex        =   1
       Top             =   2280
       Width           =   375
@@ -61,7 +63,7 @@ Begin VB.Form frmMain
       Appearance      =   0  'Flat
       Height          =   375
       Left            =   0
-      Picture         =   "frmMain.frx":10CA
+      Picture         =   "frmMain.frx":147F
       Style           =   1  'Graphical
       TabIndex        =   0
       Top             =   2280

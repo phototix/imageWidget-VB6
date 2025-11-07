@@ -1,0 +1,1 @@
+"E:\Windows Kit\bin\10.0.26100.0\x64\signtool.exe" sign /n "MyTestCert" /fd SHA256 /tr http://timestamp.digicert.com /td SHA256 "E:\Users\User\Downloads\Microsoft Visual Basic 6.0 Professional Edition\Projects\GalleryImages\ImageWidget.exe"
