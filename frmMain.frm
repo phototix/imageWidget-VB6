@@ -1,9 +1,8 @@
 VERSION 5.00
-Object = "{F9043C88-F6F2-101A-A3C9-08002B2F49FB}#1.2#0"; "COMDLG32.OCX"
 Begin VB.Form frmMain 
    BorderStyle     =   1  'Fixed Single
    Caption         =   "Gallery"
-   ClientHeight    =   3150
+   ClientHeight    =   3135
    ClientLeft      =   45
    ClientTop       =   390
    ClientWidth     =   2400
@@ -11,7 +10,7 @@ Begin VB.Form frmMain
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   3150
+   ScaleHeight     =   3135
    ScaleWidth      =   2400
    StartUpPosition =   3  'Windows Default
    Begin VB.CommandButton cmdAlwaysOnTop 
@@ -51,13 +50,6 @@ Begin VB.Form frmMain
       TabIndex        =   1
       Top             =   2280
       Width           =   375
-   End
-   Begin MSComDlg.CommonDialog cdFolder 
-      Left            =   600
-      Top             =   3120
-      _ExtentX        =   847
-      _ExtentY        =   847
-      _Version        =   393216
    End
    Begin VB.CommandButton cmdSelectFolder 
       Appearance      =   0  'Flat
